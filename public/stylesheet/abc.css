@@ -1,0 +1,41 @@
+:root{
+        --body:#8c9eff;
+        --cont: #eceff1;
+        --line: #651fff;
+        --txt: #007bfd;
+        --light: #c5cae9;
+    }
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background: var(--body);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.4;
+}
+.container{
+    width: 1100px;
+    max-width: 100%;
+    padding: 40px;
+    margin : 30px;
+    background: var(--count);
+    position: relative;
+}
+.details{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.order h1{
+    text-transform: uppercase;
+}
+.order span{
+    color: var(--txt);
+}
