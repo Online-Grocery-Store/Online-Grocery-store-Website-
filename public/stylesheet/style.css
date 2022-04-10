@@ -61,7 +61,7 @@
   .txt_field input:focus ~ label,
   .txt_field input:valid ~ label {
     top: -5px;
-    color: #2691d9;
+    color: hsl(204, 70%, 50%);
   }
   .txt_field input:focus ~ span::before,
   .txt_field input:valid ~ span::before {
