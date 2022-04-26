@@ -65,13 +65,35 @@ main{
 #grid{
   padding: 10px;
   display: grid;
-  height: 150px;
-  width: 600px;
+  height: 100px;
+  width: 800px;
   margin-left: 20px;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 700px 100px;
+  border-radius: 10px;
   border: 3px solid blue;
 }
+.cont3{
+  padding-left: 5%;
+}
 
+.btnt:hover{
+  color: white;
+  background-color: rgb(71, 71, 255);
+}
+.btnt{
+  margin-top: 10px;
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  border: 3px solid rgb(71, 71, 255);
+}
+
+#msg_box{
+  border-radius: 5px;
+  border: 2px solid black;
+  height: 100px;
+  width: 400px;
+}
 /* ---------------------------- */
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -121,4 +143,13 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+/* Related Product */
+
+.Rproduct{
+  height: 150px;
+  width: 200px;
+  display: grid;
+  grid-template-rows: 100px, 50px;
 }
