@@ -60,7 +60,7 @@ body{
     position: relative;
 }
 #pregress li::before{
-    content: '\2713';
+    content: '';
     position: absolute;
     display: flex;
     justify-content: center;
@@ -74,25 +74,25 @@ body{
     z-index: 11111;
 }
 #progress li:last-child::before{
-    content:'\2713';
+    content:'';
     font-weight: bold;
     background:var(--light);
-}
-#pregress::before{
-    content:'';
-    position: absolute;
-    top: 20px;
-    width: 55%;
-    margin-left: 35px;
-    height: 10px;
-    background: var(--line);
-    z-index: 111;
 }
 #progress::after{
     content:'';
     position: absolute;
-    top: 20px;
-    width: 80%;
+    top: 10px;
+    width: 55%;
+    /* margin-left: 35px; */
+    height: 10px;
+    background: var(--line);
+    z-index: 111;
+}
+#progress::before{
+    content:'';
+    position: absolute;
+    top: 10px;
+    width: 90%;
     height: 10px;    
     background: #c5cae9;
 }
