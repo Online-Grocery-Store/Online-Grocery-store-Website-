@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <title>Online Grocery Store</title>
+  <style>
+    #price {
+      color: #4200FE;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      background-color: #f8fcff;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .align {
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+    }
+    .align1{
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b>Online Grocery Store</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+      </ul>
+      <div class="d-flex justify-content-center">
+        <form class="d-flex justify-content-center">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2.5em" height="2.5em"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <g fill="white">
+              <path fill-rule="evenodd"
+                d="M24 42c9.941 0 18-8.059 18-18S33.941 6 24 6S6 14.059 6 24s8.059 18 18 18Zm0 2c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"
+                clip-rule="evenodd" />
+              <path
+                d="M12 35.63c0-1.033.772-1.906 1.8-2.02c7.715-.854 12.72-.777 20.418.019a1.99 1.99 0 0 1 1.108 3.472c-9.085 7.919-14.277 7.81-22.686.008c-.41-.38-.64-.92-.64-1.478Z" />
+              <path fill-rule="evenodd"
+                d="M34.115 34.623c-7.637-.79-12.57-.864-20.206-.019A1.028 1.028 0 0 0 13 35.631c0 .286.119.557.32.745c4.168 3.866 7.326 5.613 10.413 5.624c3.098.011 6.426-1.722 10.936-5.652a.99.99 0 0 0-.554-1.724ZM13.69 32.616c7.796-.863 12.874-.785 20.632.018a2.99 2.99 0 0 1 1.662 5.221c-4.575 3.988-8.385 6.16-12.257 6.145c-3.883-.014-7.525-2.223-11.766-6.158A3.018 3.018 0 0 1 11 35.63a3.028 3.028 0 0 1 2.69-3.015Z"
+                clip-rule="evenodd" />
+              <path d="M32 20a8 8 0 1 1-16 0a8 8 0 0 1 16 0Z" />
+              <path fill-rule="evenodd" d="M24 26a6 6 0 1 0 0-12a6 6 0 0 0 0 12Zm0 2a8 8 0 1 0 0-16a8 8 0 0 0 0 16Z"
+                clip-rule="evenodd" />
+            </g>
+          </svg>
+        </form>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Silder -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_sbf_m_Adhoc-SummerSkinCare_460-250222.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_sbf_m_Adhoc-GM_460-250222.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_bcd_m_cheese_460-250222.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <h4 class="align1"><b>Categories</b></h4>
+  <div class="align">
+    <button type="button" class="btn btn-primary">Stupes</button>
+    <button type="button" class="btn btn-primary">Snacks</button>
+    <button type="button" class="btn btn-primary">Packaged food</button>
+    <button type="button" class="btn btn-primary">House Hold</button>
+    <button type="button" class="btn btn-primary">Diary</button>
+    <button type="button" class="btn btn-primary">Bevrages</button>
+  </div>
+  <br>
+  <!-- Product -->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="/public/templates/Packaged food/cereals.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cereals</h5>
+          <p class="card-text">
+          <h5 id="price">Price Rs:166</h5>
+          <p>Kelloggs Froot Loops - Crunchy Multigrain Cereal, 285 g</p>
+          </p>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <path fill="none" stroke="#4200fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+              d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div id="size">
+          <img src="/public/templates/Packaged food/chocolate.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">chocolate</h5>
+          <p class="card-text">
+          <h5 id="price">Price Rs:220</h5>
+          <p>Cadbury Dairy Milk Chocolate, 2x24 g Multipack</p>
+          </p>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <path fill="none" stroke="#4200fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+              d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div id="size">
+          <img src="https://www.bigbasket.com/media/uploads/p/xxl/126906_7-aashirvaad-atta-whole-wheat.jpg"
+            class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Atta</h5>
+          <p class="card-text">
+          <h5 id="price">Price Rs:60</h5>
+          <p>Aashirvaad Atta/Godihittu - Whole Wheat, 10 kg Pouch</p>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <path fill="none" stroke="#4200fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+              d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z" />
+          </svg>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="/public/templates/Packaged food/peanut butter.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Peanut Butter</h5>
+          <p class="card-text">
+          <h5 id="price">Price Rs:220</h5>
+          <p>Cadbury Dairy Milk Chocolate, 2x24 g Multipack</p>
+          </p>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <path fill="none" stroke="#4200fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+              d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="/public/templates/House Hold/Dish Wash Bar.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dish Wash Bar</h5>
+
+          <p class="card-text">
+          <h5 id="price">Price Rs:20</h5>
+          Vim Dishwash Bar - Lemon, 200 g (Pack of 3)</p>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <path fill="none" stroke="#4200fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+              d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z" />
+          </svg>
+
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="/public/templates/Packaged food/unknown.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Soya Souce</h5>
+          <p class="card-text">
+          <h5 id="price">Price Rs:120</h5>
+          Pantai Sauce - Dark Soya, 200 ml</p>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <path fill="none" stroke="#4200fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+              d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="/public/templates/Staples/Cloves.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cloves</h5>
+          <p class="card-text">
+          <h5 id="price">Price Rs:34</h5>
+          BB Royal Organic - Cloves/Lavanga, 20 g</p>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <path fill="none" stroke="#4200fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+              d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z" />
+          </svg>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="/public/templates/Dairy/cheese.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cheese</h5>
+          <p class="card-text">
+          <h5 id="price">Price: Rs 235.20</h5>
+          Amul Cheese - Slices, 2x200 g Multipack</p>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <path fill="none" stroke="#4200fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+              d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z" />
+          </svg>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="/public/templates/Staples/cream biscuit.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cream Biscuit</h5>
+          <p class="card-text">
+          <h5 id="price">Price Rs:8.00</h5>
+          Britannia Treat Orange Cream Biscuits, 60 g</p>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <path fill="none" stroke="#4200fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+              d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z" />
+          </svg>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
