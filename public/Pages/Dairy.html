@@ -4,9 +4,191 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diary</title>
+    <title>Snacks</title>
+    <link rel="stylesheet" href="/public/stylesheet/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    
+    <!-- header section starts  -->
+
+<header>
+
+    <div class="header-1">
+
+        <a href="#" class="logo">ON-GROCERY</a>
+
+        <form action="" class="search-box-container">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-2">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#category">category</a>
+            <a href="#product">product</a>
+            <a href="#deal">deal</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-user-circle"></a>
+        </div>
+
+    </div>
+
+</header>
+
+<section class="product" id="product">
+
+    <h1 class="heading"><span>Diary</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="discount">-33%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="https://www.bigbasket.com/media/uploads/p/l/180584_8-amul-masti-buttermilk-spice.jpg" alt="">
+            <h3>Amul Masti Buttermilk</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn">BUY</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">-45%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share" onclick="openNav()"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <a href="">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/1206716_2-cadbury-dairy-milk-chocolate.jpg" alt="">
+            <h3>Cadbury Dairy Milk Chocolate</h3>
+            </a>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn">BUY</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">-52%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share" onclick="openNav()"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <a href="/front-end/product.html">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/100285703_15-nandini-goodlife-toned-milk.jpg" alt="">
+            <h3>Nandini Goodlife</h3>
+            </a>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn">BUY</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">-13%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share" onclick="openNav()"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="https://www.bigbasket.com/media/uploads/p/l/1200180_4-milky-mist-curd-farm-fresh.jpg" alt="">
+            <h3>Milky Mist Curd </h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn">BUY</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share" onclick="openNav()"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="https://www.bigbasket.com/media/uploads/p/l/1204991_3-amul-butter-pasteurized.jpg" alt="">
+            <h3>Amul Butter</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn">BUY</a>
+        </div>
+    </div>
+
+</section>
+
+
 </body>
 </html>

@@ -26,6 +26,7 @@ main{
   color: aliceblue;
   background-color:rgb(71, 71, 255);
 }
+
 .btn-b1{
   display: flex;
   align-items: center;
