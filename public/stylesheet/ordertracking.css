@@ -82,7 +82,7 @@ body{
     content:'';
     position: absolute;
     top: 10px;
-    width: 55%;
+    width: 10%;
     /* margin-left: 35px; */
     height: 10px;
     background: var(--line);
