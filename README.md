@@ -1,5 +1,7 @@
 # Online-Grocery-store-Website-
 
+Session 21-22
+
 # ABSTRACT
 
 Online grocery shopping is a new way of buying desired grocery products for household consumption. Online ordering product are proving a proper infrastructure for the buyers. Findings show that consumers prefer to purchase packaged goods in an online supermarket. However, consumers prefer to buy great food products with a high need of touch in a brick-and-mortar supermarket. This project also include various modules some of them are offer module, Delivery System, product categories etc. It also helps the online grocers to understand consumers' needs and 
