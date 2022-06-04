@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/stylesheet/register.css">
+  <title>Registration</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <form id="form">
+    <div class="login-box">
+      <h1>Registration</h1>
+      <div class="textbox">
+        <input id="name" type="text" placeholder="Name" required>
+      </div>
+      <div class="textbox">
+        <input id="uname" type="text" placeholder="Username" required>
+      </div>
+      <div class="textbox">
+        <input id="email" type="email" placeholder="Enter email-id" required>
+      </div>
+      <div class="textbox">
+        <input id="pass" type="password" placeholder="Password" required>
+      </div>
+      <div class="textbox">
+        <input id="cpass" type="password" placeholder="Confirm Password" required>
+      </div>
+      <input type="submit" class="button" value="Sign up">
+    </div>
+  </form>
+  <script>
+    var form = document.getElementById('form');
+    form.addEventListener('submit',async (e)=>{
+      e.preventDefault();
+      var username = document.getElementById('uname').value,
+      email = document.getElementById('email').value,
+      name = document.getElementById('name').value,
+      password = document.getElementById('pass').value,
+      cpassword = document.getElementById('cpass').value;
+      console.log(email,name,password,cpassword)
+      if(password == cpassword){
+        axios.post('/add/user',{email,name,password,username}).then(e=>{
+          window.location.href ='/home'
+        }).catch(e=>{
+          
+          alert('You have already register, please login.')
+        })
+      }else{
+        alert('password and cpassword is not mach')
+      }
+      
+
+
+
+    })
+  </script>
+</body>
+
+</html>

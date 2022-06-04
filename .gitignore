@@ -1,1 +1,10 @@
+<<<<<<< HEAD
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
+=======
 node_modules
+>>>>>>> a4e5e3af9cba7b5d570f8d7a7fe27f0e0a7c0209

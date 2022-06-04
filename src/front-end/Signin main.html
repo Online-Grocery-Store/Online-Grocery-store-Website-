@@ -5,11 +5,10 @@
     <meta charset="utf-8">
     <title>Signin</title>
     <link rel="stylesheet" href="/public/stylesheet/signin_main.css">
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
-<<<<<<< HEAD
     <form id="form">
     <div class="login-box">
         <h1>Login</h1>
@@ -20,19 +19,26 @@
             <input id="psw" type="password" placeholder="Password" required>
         </div>
             <input  type="submit" class="button" value="Sign in">
-=======
-    <form action="/front-end/index.html">
-    <div class="login-box">
-        <h1>Login</h1>
-        <div class="textbox">
-            <input type="text" placeholder="Username" required>
-        </div>
-        <div class="textbox">
-            <input type="password" placeholder="Password" required>
-        </div>
-            <input type="submit" class="button" value="Sign in">
->>>>>>> a4e5e3af9cba7b5d570f8d7a7fe27f0e0a7c0209
     </div>
 </form>
+<script>
+  var form = document.getElementById('form');
+  form.addEventListener('submit',async (e)=>{
+    e.preventDefault();
+    var name = document.getElementById('name').value,
+    password = document.getElementById('psw').value;
+  
+ 
+      axios.post('/login/user',{username:name,password}).then(e=>{
+        window.location.href ='/home'
+      }).catch(e=>{
+        
+        alert(e.response.data)
+      })
+    
+
+  })
+</script>
 </body>
+
 </html>
