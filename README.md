@@ -27,10 +27,15 @@ chocolates, jams etc.
 # CONTRIBUTION
 
 [ASMIT MESHRAM](https://github.com/asmit416)
+
 [PREM MANGRULKAR](https://github.com/Prem696)
+
 [RITIK UKEY](https://github.com/RitikUkey444)
+
 [SUNIL NANHE](https://github.com/SunyaTheSuperMan)
+
 [TEJAS KINGE](https://github.com/tejaskinge29)
+
 [TUSHAR THAKARE](https://github.com/TUSHARTHEWAY)
 
 # SET UP OF WEBSITE
