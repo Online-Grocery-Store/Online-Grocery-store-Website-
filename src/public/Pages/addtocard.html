@@ -1,126 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>shopping cart</title>
-    <style type="text/css">
-    @import url('https://stackpath,bootstrapcdn.co/font-awesome/4.7.0/css/font-awesome.min.css');
-    
-    *{
-        padding: 0;
-        margin: 0;
-        color: #454545;
+    <title>Shopping cart </title>
 
-    }
-    h1{
-        width: 3%;
-        position: relative;
-        top: 60px;
-        left: 90px;
-        cursor: pointer;
-    }
-    h1:before{
-        content: attr(data-count);
-        position: absolute;
-        color: white;
-        font-size: 15px;
-        text-align: 15px;
-        top: -12px;
-        width: 20px;
-        height: 20px;
-        background: red;
-        border-radius: 50%;
-        opacity: 0;
-    }
-    section div{
-        width: 90px;
-        height: 400px;
-        display: flex;
-        justify-content: space-around;
-        margin: 100px auto;
-    }
-    section div{
-        width: 22%;
-        height: 93%;
-        background: 100px auto;
-        padding: 1%;
-        position: relative;
-    }
-    img{
-        width: 300px;
-        height: 186px;
-    }
-    p{
-        margin: 5px;
-    }
-    h6{
-        width: 50px;
-        padding: 50px;
-        margin: 10px;
-        font-size: 15px;    
-    }
-    button{
-        padding: 5px;
-        background: red;
-        border: none;
-        outline: none;
-        font-weight: bold;
-        color:#fafafa;
-        cursor: pointer;
-    }
-    section div span{
-        position: absolute;
-        top: 14px;
-        left: 13px;
-        background: red;
-        width: 300px;
-        height: 186px;
-        
-    }
-    
-</style>        
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/public/stylesheet/index.css">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
+
 <body>
-    <h1><i class="fa fa-shopping-cart"></i></h1>
-    <section>
-        <div>
-            <img src="https://www.bigbasket.com/media/uploads/p/l/40104245_5-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias facere soluta iure quasi minus voluptatem sunt impedit molestiae ad quaerat!</p>
-            <h6>$500.65</h6>
-            <span></span>
-            </button>Add-cart</button>
 
+    <!-- header section starts  -->
 
+    <header>
+
+        <div class="header-1">
+
+            <a href="/home" class="logo">ON-GROCERY</a>
+
+            <form action="" class="search-box-container">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
 
         </div>
-        <div>
-            <img src="https://www.bigbasket.com/media/uploads/p/l/294274_16-bingo-mad-angles-achari-masti.jpg">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias facere soluta iure quasi minus voluptatem sunt impedit molestiae ad quaerat!</p>
-            <h6>$500.65</h6>
-            <span></span>
-            </button>Add-cart</button>
+
+        <div class="header-2">
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <nav class="navbar">
+                <a href="/home">home</a>
+                <a href="#category">category</a>
+                <a href="#product">product</a>
+                <a href="#deal">deal</a>
+                <a href="#contact">contact</a>
+            </nav>
+
+            <div class="icons">
+                <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-user-circle"></a>
+            </div>
+
         </div>
-        <div>
-            <img src="043.jpg">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias facere soluta iure quasi minus voluptatem sunt impedit molestiae ad quaerat!</p>
-            <h6>$500.65</h6>
-            <span></span>
-            </button>Add-cart</button>
 
-        
-        </div>
-        <div>
-            <img src="043.jpg">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias facere soluta iure quasi minus voluptatem sunt impedit molestiae ad quaerat!</p>
-            <h6>$500.65</h6>
-            <span></span>
-            </button>Add-cart</button>
+    </header>
+   
+    <section class="product" id="product">
 
-    </section>    
+        <h1 class="heading">Your <span>basket</span></h1>
 
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount">-33%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <a href="/public/Pages/product_info/almond/badam.html">
+                    <img src="https://www.bigbasket.com/media/uploads/p/l/1208791_1-bb-popular-almondbadam-californian-giri.jpg"
+                        alt="">
+                    <h3>Almond/Badam</h3>
+                </a>
+
+                <div class="price"> $10.50 <span> $13.20 </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /kg </span>
+                </div>
+                <a href="/payment" class="btn">buy</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">-45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share" onclick="openNav()"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <a href="">
+                    <img src="https://www.bigbasket.com/media/uploads/p/l/40165623_6-britannia-winkin-cow-vanillicious-thick-milkshake.jpg"
+                        alt="">
+                    <h3>Britannia Winkin'</h3>
+                </a>
+                
+                <div class="price"> $10.50 <span> $13.20 </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /kg </span>
+                </div>
+                <a href="/payment" class="btn">buy</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">-52%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share" onclick="openNav()"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <a href="/front-end/product.html">
+                    <img src="https://www.bigbasket.com/media/uploads/p/l/40104245_5-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg"
+                        alt="">
+                    <h3>Pepsi</h3>
+                </a>
+                
+                <div class="price"> $10.50 <span> $13.20 </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /kg </span>
+                </div>
+                <a href="/payment" class="btn">buy</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">-13%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share" onclick="openNav()"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <a href="/public/Pages/product_info/almond/britanniawinkin.html"></a>
+                <img src="/public/Images/product-4.png" alt="">
+                <h3>Amul Taaza Milk</h3>
+                
+                <div class="price"> $10.50 <span> $13.20 </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /kg </span>
+                </div>
+                <a href="/payment" class="btn">buy</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share" onclick="openNav()"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="https://www.bigbasket.com/media/uploads/p/l/294274_16-bingo-mad-angles-achari-masti.jpg"
+                    alt="">
+                <h3>Bingo Mad Angles Chips</h3>
+              
+                <div class="price"> $10.50 <span> $13.20 </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /kg </span>
+                </div>
+                <a href="/payment" class="btn">buy</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">-29%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share" onclick="openNav()"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="https://www.bigbasket.com/media/uploads/p/l/40129632_2-nescafe-ready-to-drink-coffee-flavoured-milk-intense-cappuccino.jpg"
+                    alt="">
+                <h3>Nescafe Intense</h3>
+                
+                <div class="price"> $10.50 <span> $13.20 </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /kg </span>
+                </div>
+                <a href="/payment" class="btn">buy</a>
+            </div>
+
+
+    </section>
+    <script type="text/javascript" src="/backend/addtocard.js"></script>
 </body>
-</html>
 
-<script type ="text/javascript">
-</script>
-      
+</html>

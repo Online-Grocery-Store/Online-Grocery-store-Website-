@@ -60,6 +60,9 @@ db.then(async (con)=>{
     app.get('/front-end/ordertracking.html',(req,res)=>{
         res.sendFile(path.join(__dirname+'/front-end/ordertracking.html'));
     })
+    app.get('/addtocard',(req,res)=>{
+        res.sendFile(path.join(__dirname+'/public/Pages/addtocard.html'));
+    })
     ////////////////////////////////////////////
     app.post('/add/user',async (req,res)=>{
         const {username,email,password,name} = req.body;

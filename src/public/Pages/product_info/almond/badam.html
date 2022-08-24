@@ -18,6 +18,9 @@
       body{
         background-color: rgb(214, 255, 205);;
       }
+      #adc{
+        color: black;
+      }
     </style>
     
 </head>
@@ -50,7 +53,7 @@
         </nav>
 
         <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="/addtocard" class="fas fa-shopping-cart"></a>
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-user-circle"></a>
         </div>
@@ -115,7 +118,7 @@
           </select>
         </div><br>
         <div class="btn-b1">
-         <h5><b>Add to basket</b></h5> 
+         <h5><a href="/addtocard"><b id="adc">Add to basket</b></a></h5> 
         </div>
         <br>
         <div class="btn-b2" onclick="redirect()">

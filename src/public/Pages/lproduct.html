@@ -4,51 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stuple</title>
-    <link rel="stylesheet" href="/public/stylesheet/index.css">
+    <title>Product</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/public/stylesheet/index.css">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 <body>
     <!-- header section starts  -->
 
-<header>
+    <header>
 
-    <div class="header-1">
+        <div class="header-1">
 
-        <a href="#" class="logo">ON-GROCERY</a>
+            <a href="#" class="logo">ON-GROCERY</a>
 
-        <form action="" class="search-box-container">
-            <input type="search" id="search-box" placeholder="search here...">
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
+            <form action="" class="search-box-container">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
 
-    </div>
-
-    <div class="header-2">
-
-        <div id="menu-bar" class="fas fa-bars"></div>
-
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#category">category</a>
-            <a href="#product">product</a>
-            <a href="#deal">deal</a>
-            <a href="#contact">contact</a>
-        </nav>
-
-        <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-user-circle"></a>
         </div>
 
-    </div>
+        <div class="header-2">
 
-</header>
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#category">category</a>
+                <a href="#product">product</a>
+                <a href="#deal">deal</a>
+                <a href="#contact">contact</a>
+            </nav>
+
+            <div class="icons">
+                <a href="/addtocard" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-user-circle"></a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    
+<!-- product section starts  -->
 
 <section class="product" id="product">
 
-    <h1 class="heading"><span>Staples</span></h1>
+    <h1 class="heading">latest <span>products</span></h1>
 
     <div class="box-container">
 
@@ -59,8 +67,9 @@
                 <a href="#" class="fas fa-share"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="https://www.bigbasket.com/media/uploads/p/l/40098408_10-bb-royal-organic-brown-chanachanna-brown.jpg" alt="">
-            <h3>Channa Brown</h3>
+            <a href="/public/Pages/product_info/almond/badam.html">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/1208791_1-bb-popular-almondbadam-californian-giri.jpg" alt="">
+            <h3>Almond/Badam</h3></a>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -75,7 +84,6 @@
                 <span> /kg </span>
             </div>
             <a href="/addtocard" class="btn">go to cart</a>
-            <a href="/front-end/buypay.html" class="btn">BUY</a>
         </div>
 
         <div class="box">
@@ -85,9 +93,9 @@
                 <a href="#" class="fas fa-share" onclick="openNav()"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <a href="">
-            <img src="https://www.bigbasket.com/media/uploads/p/l/40072455_12-bb-royal-organic-kabuli-chanachanna.jpg" alt="">
-            <h3>Organic Kabuli Chana</h3>
+            <a href="/public/Pages/product_info/almond/britanniawinkin.html">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/40165623_6-britannia-winkin-cow-vanillicious-thick-milkshake.jpg" alt="">
+            <h3>Britannia Winkin'</h3>
             </a>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -102,8 +110,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#/addtocard class="btn">go to cart</a>
-            <a href="/front-end/buypay.html" class="btn">BUY</a>
+            <a href="/addtocard" class="btn">Go to cart</a>
         </div>
 
         <div class="box">
@@ -113,9 +120,9 @@
                 <a href="#" class="fas fa-share" onclick="openNav()"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <a href="/front-end/product.html">
-            <img src="https://www.bigbasket.com/media/uploads/p/l/40072499-4_5-bb-royal-organic-cardamomelachi-green.jpg" alt="">
-            <h3>Hari Elaichi</h3>
+            <a href="/public/Pages/product_info/almond/pepsi.html">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/40104245_5-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg" alt="">
+            <h3>Pepsi</h3>
             </a>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -131,7 +138,6 @@
                 <span> /kg </span>
             </div>
             <a href="/addtocard" class="btn">go to cart</a>
-            <a href="/front-end/buypay.html" class="btn">BUY</a>
         </div>
 
         <div class="box">
@@ -141,8 +147,10 @@
                 <a href="#" class="fas fa-share" onclick="openNav()"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="https://www.bigbasket.com/media/uploads/p/l/40168543_4-bb-royal-organic-rajma-chitra.jpg" alt="">
-            <h3>Rajma Chitra</h3>
+          <a href="/public/Pages/product_info/almond/amulmilk.html">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/306926-2_4-amul-homogenised-toned-milk.jpg" alt="">
+            <h3>Amul Taaza Milk</h3>
+          </a>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -157,7 +165,6 @@
                 <span> /kg </span>
             </div>
             <a href="/addtocard" class="btn">go to cart</a>
-            <a href="/front-end/buypay.html" class="btn">BUY</a>
         </div>
 
         <div class="box">
@@ -167,8 +174,8 @@
                 <a href="#" class="fas fa-share" onclick="openNav()"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="https://www.bigbasket.com/media/uploads/p/l/40075299_7-bb-royal-organic-cinnamondalchini.jpg" alt="">
-            <h3>Cinnamon/Dalchini</h3>
+            <img src="https://www.bigbasket.com/media/uploads/p/l/294274_16-bingo-mad-angles-achari-masti.jpg" alt="">
+            <h3>Bingo Mad Angles Chips</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -183,7 +190,6 @@
                 <span> /kg </span>
             </div>
             <a href="/addtocard" class="btn">go to cart</a>
-            <a href="/front-end/buypay.html" class="btn">BUY</a>
         </div>
 
         <div class="box">
@@ -193,8 +199,8 @@
                 <a href="#" class="fas fa-share" onclick="openNav()"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="https://www.bigbasket.com/media/uploads/p/l/40093612-4_6-bb-royal-organic-poha-medium.jpg" alt="">
-            <h3>Poha Medium</h3>
+            <img src="https://www.bigbasket.com/media/uploads/p/l/40129632_2-nescafe-ready-to-drink-coffee-flavoured-milk-intense-cappuccino.jpg" alt="">
+            <h3>Nescafe Intense</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -209,7 +215,6 @@
                 <span> /kg </span>
             </div>
             <a href="/addtocard" class="btn">go to cart</a>
-            <a href="/front-end/buypay.html" class="btn">BUY</a>
         </div>
 
         <div class="box">
@@ -219,17 +224,10 @@
                 <a href="#" class="fas fa-share" onclick="openNav()"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-
-            <div id="mySidepanel" class="sidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#"><span class="iconify" data-icon="logos:whatsapp"></span></a>
-                <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill"></span></a>
-                <a href="#"><span class="iconify" data-icon="subway:sms-3"></span></a>
-                <a href="#"><span class="iconify" data-icon="akar-icons:facebook-fill" style="color: blue;"></span></a>
-              </div>
-
-            <img src="https://www.bigbasket.com/media/uploads/p/l/40168530_3-bb-royal-organic-bajra-atta.jpg" alt="">
-            <h3> Bajra Atta</h3>
+              <a href="/public/Pages/product_info/almond/oapple.html">
+            <img src="/public/Images/product-7.png" alt="">
+            <h3>organic apple</h3>
+            </a>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -244,7 +242,6 @@
                 <span> /kg </span>
             </div>
             <a href="/addtocard" class="btn">go to cart</a>
-            <a href="/front-end/buypay.html" class="btn">BUY</a>
         </div>
 
         <div class="box">
@@ -254,8 +251,10 @@
                 <a href="#" class="fas fa-share" onclick="openNav()"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="https://www.bigbasket.com/media/uploads/p/l/40101871_11-bb-royal-organic-almondbadam.jpg" alt="">
-            <h3>Almond/Badam</h3>
+            <a href="/public/Pages/product_info/almond/amulbutter.html">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/104864-2_2-amul-butter-pasteurised.jpg" alt="">
+            <h3>Amul butter</h3>
+            </a>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -270,7 +269,6 @@
                 <span> /kg </span>
             </div>
             <a href="/addtocard" class="btn">go to cart</a>
-            <a href="/front-end/buypay.html" class="btn">BUY</a>
         </div>
 
         <div class="box">
@@ -280,8 +278,10 @@
                 <a href="#" class="fas fa-share" onclick="openNav()"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="https://www.bigbasket.com/media/uploads/p/l/40016240_4-pro-nature-organic-almonds.jpg" alt="">
-            <h3>Organic - Almonds</h3>
+            <a href="#">
+            <img src="/public/Images/product-9.png" alt="">
+            <h3>organic carrot</h3>
+           </a>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -296,13 +296,13 @@
                 <span> /kg </span>
             </div>
             <a href="/addtocard" class="btn">go to cart</a>
-            <a href="/front-end/buypay.html" class="btn">BUY</a>
         </div>
 
     </div>
 
 </section>
 
+<!-- product section ends -->
 
 </body>
 </html>
