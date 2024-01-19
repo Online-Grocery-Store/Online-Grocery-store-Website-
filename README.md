@@ -44,7 +44,10 @@ chocolates, jams etc.
 
 Start project by using
 ```bash
--npm run dev
+npm install ts-node@latest --save-dev
+npx ts-node src/index.ts
+npm run start
+npm run dev
 ```
 Run on localhost:8080
 ```bash
